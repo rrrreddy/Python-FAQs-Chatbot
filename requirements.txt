@@ -1,0 +1,7 @@
+langchain
+bs4
+langchain_community
+chromadb
+huggingface-hub
+python-dotenv
+streamlit
