@@ -204,8 +204,8 @@ from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 parser = StrOutputParser()
 
 template = """Use the following pieces of context to answer the question at the end.
-If you don't know the answer, just say that you don't know, don't try to make up an answer.
-Use three sentences maximum and keep the answer as concise as possible.
+Only answer the question from the context don't generate any additional infrormation.
+If you don't get enough information from the context, just say that "I don't have information about this question". I can only answer questions from the source url https://docs.python.org/3/faq/index.html.
 Always say "thanks for asking!" at the end of the answer.
 
 {context}
